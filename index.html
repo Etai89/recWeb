@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meetings</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div id="my_form" class="mything1" >
+        <select class="mything" id="languageSelect">
+            <option value="he-IL">Hebrew</option>
+            <option value="en-US">English</option>
+            <option value="fr-FR" selected>French</option>
+        </select>
+        <label class="mything" for="thresholdInput">Threshold: </label>
+        <input class="mything" type="range" id="thresholdInput" min="0" max="200" value="100">
+        <span class="mything" id="thresholdValue">150</span>
+
+        <button class="mything" id="start">Record</button>
+        <button class="mything" id="stop" disabled>Stop</button>
+        <button class="mything" id="downloadText" disabled>Download Text</button>
+        <button class="mything" id="downloadAudio" disabled>Download Audio</button>
+        <button class="mything" id="clearData" disabled>Clear Data</button>
+    </div>
+    <div id="fakk" class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Menu</h2>
+            <a href="#">Dashboard</a>
+            <a href="#">Settings</a>
+            <a href="#">Analytics</a>
+            <a href="#">Support</a>
+            <a href="#">Log Out</a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <div class="title">Data Dashboard</div>
+                <div class="actions">
+                    <button>Generate Report</button>
+                </div>
+            </div>
+
+            <!-- Table -->
+            <div class="table-container">
+                <h3>Recent Transactions</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>9546</td>
+                            <td>2025-04-01</td>
+                            <td>$1,245.00</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>6515</td>
+                            <td>2025-03-28</td>
+                            <td>$532.00</td>
+                            <td>Pending</td>
+                        </tr>
+                        <tr>
+                            <td>5154</td>
+                            <td>2025-03-20</td>
+                            <td>$908.75</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>3546</td>
+                            <td>2025-03-15</td>
+                            <td>$1,123.50</td>
+                            <td>Cancelled</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Cards -->
+            <div class="card-container">
+                <div class="card">
+                    <h4>Latest Metrics</h4>
+                    <p>Visitors: 5,324</p>
+                    <p>New Signups: 238</p>
+                    <p>Revenue: $139,340.00</p>
+                </div>
+                <div class="card">
+                    <h4>System Health</h4>
+                    <p>CPU Usage: 72%</p>
+                    <p>Memory Usage: 4GB/8GB</p>
+                    <p>Disk Space: 60GB/100GB</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
